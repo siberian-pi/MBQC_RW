@@ -21,7 +21,7 @@ Given a sequence of gate description of a quantum circuit, the `MBQCRewriting(ci
 
 The position of qubits are numbered as 0,1,...  An example is a CNOT on qubit 0,1, which is depicted as followed
 
-![A CNOT](https:://github.com/siberian-pi/MBQC_RW/blob/master/pics/ACNOT.png)
+![A CNOT](https://github.com/siberian-pi/MBQC_RW/blob/master/pics/ACNOT.png)
 
 The corresponding input is
 ```python
