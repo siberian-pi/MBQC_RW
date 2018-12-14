@@ -3,7 +3,7 @@
 Implementatin of rewritting rules for Measurement-Based-Quantum-Computation(MBQC).  Based on the paper *Parallelizing quantum circuits, Anne Broadbent, Elham Kashefi, 2002, TCS*.
 
 ## 1.General description
-Given a sequence of gate description of a quantum circuit, the `MBQCRewriting(circuit,n)` return the corresponding MBQC pattern, which is in the standerd form. Notice that the pattern haven't be signal shifting yet.
+Given a sequence of gate description of a quantum circuit, the `MBQCRewriting(circuit,n)` return the corresponding MBQC pattern, which is in the standerd form. Notice that the output pattern haven't been signal shifting yet.
 
 ## 2.Detailed information
 ### 2.1 Function
