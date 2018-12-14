@@ -21,17 +21,12 @@ Given a sequence of gate description of a quantum circuit, the `MBQCRewriting(ci
 
 The position of qubits are numbered as 0,1,...  An example is a CNOT on qubit 0,1, which is depicted as followed
 
-![A CNOT](./pics/ACNOT.png)
 ![A CNOT](https:://github.com/siberian-pi/MBQC_RW/blob/master/pics/ACNOT.png)
 The corresponding input is
 ```python
-
 import math
-
 a=2*math.pi
-
 circuit=[['J',1,a],['E',0,1],['J',1,a]]
-
 ```
 ####2.2.2 Output
 
@@ -46,6 +41,7 @@ Then pattern should be a list whose element is the following 5 kind
 
 For example, `['X',2,0]` means an X correction on qubit 2 which depends on the measurement outcome of qubit 0.
 The output, namely the standerd pattern looks like
+
 `[...,['X',i,j] or ['Z',h,g],...,['M',k,a,[s_1,...,s_l],[t_1,...,t_h]],...['E',q,w]...,[N,r]...]`
 
 
