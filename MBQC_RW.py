@@ -130,8 +130,9 @@ def Standerdize(pattern):
 	return pattern
 
 def MBQCRewriting(circuit,n):
-    IsValid(circuit,n)
-    pattern=CircuitToPattern(circuit,n)
-    pattern=Standerdize(pattern)
-    return pattern
+	if(IsValid(circuit,n)<0):
+		return "Error: input is invalid."
+	pattern=CircuitToPattern(circuit,n)
+	pattern=Standerdize(pattern)
+	return pattern
 
